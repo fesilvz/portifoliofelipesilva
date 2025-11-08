@@ -102,7 +102,7 @@ h1 {
   border-radius: 16px;
   border: 1px solid #3f4142d5;
   backdrop-filter: blur(10px);
-  background-color: rgba(56, 59, 59, 0.288)
+  background-color: rgba(255, 255, 255, 0.05)
   
 }
 .sobre-paragrafo {
@@ -138,7 +138,7 @@ h1 {
   cursor: pointer;
 }
 .info-projeto {
- 
+ margin-bottom: 5px;
 }
 .paragrafos-projeto {
   color: rgba(255, 255, 255, 0.877);
@@ -150,6 +150,57 @@ h1 {
   text-align: center;
 }
 .projetos-card:hover {
- box-shadow: 0 10px 20px #25d9e6cb;
+ box-shadow: 0 10px 20px #1e8e968f;
  transform: translateY(-10px) scale(1.03);
+}
+.caixa-texto-projeto {
+  padding: 1.5rem;
+}
+
+.contatos {
+  padding: 6rem 2rem;
+  text-align: center;
+}
+.contatos-titulo {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #d7edf3ea;
+}
+.formulario-contato {
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px) ;
+  padding: 2rem;
+  border: 1px solid rgb(67, 87, 88);
+  border-radius: 16px;
+}
+.campo-form {
+  width: 100%;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  color:#161422;
+  border: 1px solid rgb(67, 87, 88);
+  outline: none;
+
+}
+.campo-form:focus {
+  border-color:#211b6b;
+  box-shadow: 0 0 10px #322e6e;
+}
+.botao-form {
+  color: antiquewhite;
+  background: linear-gradient(45deg, #2516fc, #ff176c);
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+  transition: all 0.5s ease;
+}
+.botao-form:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px 15px rgba(79, 70, 229, 0.04);
 }
