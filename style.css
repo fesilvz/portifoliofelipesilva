@@ -76,3 +76,79 @@ gap: 3rem   ;
   flex-direction: column;
   gap: 0.25rem;
 }
+h1 {
+  font-size: 3.5rem;
+  color: #5fd3f0;
+}
+.cabecalho-subtitulo {
+  font-size: 1.5rem;
+  color: #345f70;
+  margin-top: 0.5rem;
+}
+.sobre {
+  padding: 6rem 2rem;
+  
+}
+.sobre-titulo {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #81d6eb;
+  text-align: center;
+}
+.sobre-sobre {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto; ;
+  border-radius: 16px;
+  border: 1px solid #3f4142d5;
+  backdrop-filter: blur(10px);
+  background-color: rgba(56, 59, 59, 0.288)
+  
+}
+.sobre-paragrafo {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 3rem;
+}
+
+.projetos {
+  padding: 6rem 2rem;
+}
+.projetos-caixa {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+
+
+}
+.projetos-imagem {
+  height: 400 px;
+  width: 100%;
+  object-fit: cover;
+}
+.projetos-card {
+  background-color: rgba(49, 56, 63, 0.301);
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+  border: 1px solid #24252521;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.info-projeto {
+ 
+}
+.paragrafos-projeto {
+  
+}
+.projetos-titulo {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.projetos-card:hover {
+ box-shadow: 0 10px 20px #25d9e6cb;
+ transform: translateY(-10px) scale(1.03);
+}
