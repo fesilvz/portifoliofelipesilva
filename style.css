@@ -141,7 +141,8 @@ h1 {
  
 }
 .paragrafos-projeto {
-  
+  color: rgba(255, 255, 255, 0.877);
+  line-height: 1.25rem ;
 }
 .projetos-titulo {
   font-size: 2.5rem;
