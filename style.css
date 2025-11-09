@@ -1,42 +1,46 @@
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: "Poppins", sans-serif;}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
 
 html {
   scroll-behavior: smooth;
-  
-
-
 }
+
 body {
-  background-color: #2c2a35;
+  background-color: #000000;
   color: #ffffff;
   overflow-x: hidden;
 }
 
+/* 🔹 Navegação */
 .navegacao {
   position: fixed;
-  background: rgba(30, 27, 56, 0.8) ;
+  top: 0;
   width: 100%;
   z-index: 100;
+  background: rgba(0, 0, 0, 0.8);
   padding: 1.5rem;
+  transition: top 0.4s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.navegacao.ocultar {
+  top: -100px; /* sobe pra fora da tela */
+}
+
 .menu {
   display: flex;
   justify-content: center;
-list-style: none;
-gap: 3rem   ;
-
-
-
+  list-style: none;
+  gap: 3rem;
 }
-
 
 .menu-link {
   text-decoration: none;
-  color: #c9c7c7;
+  color: #707070;
   font-weight: 500;
   position: relative;
   padding: 0.5rem;
@@ -50,24 +54,25 @@ gap: 3rem   ;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  background: linear-gradient(90deg, #fc5f16, #3f0f46);
+  background: linear-gradient(90deg, #ffffff, #ffffff);
   transition: width 0.3s ease;
 }
 
 .menu-link:hover::after {
   width: 100%;
 }
+
+/* 🔹 Cabeçalho */
 .fotoperfil {
   width: 250px;
   height: 250px;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid #59cfe4;
-  box-shadow: 0 0 20px #428899;
+  border: 4px solid #ff0000;
+  box-shadow: 0 0 20px #e08080;
   animation: flutuar 5s ease-in-out infinite;
-
-  
 }
+
 .cabecalho {
   height: 100vh;
   display: flex;
@@ -77,58 +82,65 @@ gap: 3rem   ;
   flex-direction: column;
   gap: 0.25rem;
 }
+
 h1 {
   font-size: 3.5rem;
-  color: #5fd3f0;
+  color: #d3d3d3dc;
 }
+
 .cabecalho-subtitulo {
   font-size: 1.5rem;
-  color: #345f70;
+  color: #6d6b6bde;
   margin-top: 0.5rem;
 }
+
+/* 🔹 Sobre */
 .sobre {
   padding: 6rem 2rem;
-  
 }
+
 .sobre-titulo {
   font-size: 3rem;
   margin-bottom: 1rem;
-  color: #81d6eb;
+  color: #c9c9c9bb;
   text-align: center;
 }
+
 .sobre-sobre {
   padding: 2rem;
   max-width: 800px;
-  margin: 0 auto; ;
+  margin: 0 auto;
   border-radius: 16px;
-  border: 1px solid #3f4142d5;
+  border: 1px solid #692828d5;
   backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.05)
-  
+  background-color: rgba(255, 255, 255, 0.05);
 }
+
 .sobre-paragrafo {
   text-align: center;
   font-size: 1rem;
   margin-bottom: 3rem;
 }
 
+/* 🔹 Projetos */
 .projetos {
   padding: 6rem 2rem;
 }
+
+.projetos-titulo {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
 .projetos-caixa {
- display: grid;
- grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
- gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
-
-
 }
-.projetos-imagem {
-  height: 400 px;
-  width: 100%;
-  object-fit: cover;
-}
+
 .projetos-card {
   background-color: rgba(49, 56, 63, 0.301);
   border-radius: 16px;
@@ -138,67 +150,78 @@ h1 {
   transition: all 0.5s ease;
   cursor: pointer;
 }
-.info-projetos {
- margin-bottom: 5px;
- text-align: center;
-}
-.paragrafo-projetos {
-  color: rgba(255, 255, 255, 0.877);
-  line-height: 1.25rem ;
-  text-align: center;
-  
-}
-.projetos-titulo {
-  font-size: 2.5rem;
-  margin-bottom: 50px;
-  text-align: center;
-}
+
 .projetos-card:hover {
- box-shadow: 0 10px 20px #201e868f;
- transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 10px 20px #b128288f;
+  transform: translateY(-10px) scale(1.03);
 }
+
+.projetos-imagem {
+  height: 400px; /* 🟢 Corrigido (sem espaço entre número e unidade) */
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .caixa-texto-projeto {
   padding: 1.5rem;
 }
 
+.info-projetos {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.paragrafo-projetos {
+  color: rgba(255, 255, 255, 0.877);
+  line-height: 1.25rem;
+  text-align: center;
+}
+
+/* 🔹 Contato */
 .contatos {
   padding: 6rem 2rem;
   text-align: center;
 }
+
 .contatos-titulo {
   font-size: 3rem;
   margin-bottom: 1rem;
   color: #d7edf3ea;
 }
+
 .formulario-contato {
   max-width: 600px;
   margin: 0 auto;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(5px) ;
+  background: rgba(53, 51, 51, 0.05);
+  backdrop-filter: blur(5px);
   padding: 2rem;
-  border: 1px solid rgb(67, 87, 88);
+  border: 1px solid rgb(88, 67, 67);
   border-radius: 16px;
 }
+
+.grupo-form {
+  margin-bottom: 1.5rem;
+}
+
 .campo-form {
   width: 100%;
   padding: 1rem;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 8px;
-  color:#ffffffc2;
-  border: 1px solid rgb(67, 87, 88);
+  color: #ffffffc2;
+  border: 1px solid rgb(88, 67, 67);
   outline: none;
+}
 
-}
 .campo-form:focus {
-  border-color:#211b6b;
-  box-shadow: 0 0 10px #322e6e;
+  border-color: #2e0808;
+  box-shadow: 0 0 10px #6e1e1ea8;
 }
-.grupo-form {
-  margin-bottom: 1.5rem;
-}
+
 .botao-form {
   color: antiquewhite;
-  background: linear-gradient(45deg, #1a1650, #111111);
+  background: linear-gradient(45deg, #411a1a, #ff0000);
   padding: 1rem 2rem;
   border: none;
   border-radius: 8px;
@@ -207,10 +230,13 @@ h1 {
   width: 100%;
   transition: all 0.5s ease;
 }
+
 .botao-form:hover {
   transform: translateY(-4px);
   box-shadow: 0 5px 15px rgba(79, 70, 229, 0.04);
 }
+
+/* 🔹 Fundo com partículas */
 .particulas {
   position: fixed;
   width: 100%;
@@ -218,33 +244,18 @@ h1 {
   top: 0;
   left: 0;
   z-index: -1;
-  opacity: 0,5;
-  background: radial-gradient(circle at 10% 20%, #1f06ff, #18278171 0%, transparent 20%),
-              radial-gradient(circle at 90% 80%, #582fa8, #52136d4d 0%, transparent 20%),
-               rgb(19, 15, 44);
-  }
-
-  @keyframes flutuar {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-20px);
-    }
-
-
-  }
-  .navegacao {
-  transition: top 0.4s ease;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 100;
+  opacity: 0.5; /* 🟢 Corrigido: vírgula trocada por ponto */
+  background: radial-gradient(circle at 10% 20%, #ff0606, #6e030371 0%, transparent 20%),
+              radial-gradient(circle at 90% 80%, #a82f2f, #6d13134d 0%, transparent 20%),
+              rgb(19, 15, 44);
 }
 
-.navegacao.ocultar {
-  top: -100px; /* sobe pra fora da tela */
-}
-.navegacao {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* 🔹 Animação */
+@keyframes flutuar {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
 }
