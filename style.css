@@ -15,7 +15,7 @@ body {
   overflow-x: hidden;
 }
 
-/* 🔹 Navegação */
+/* Navegação */
 .navegacao {
   position: fixed;
   top: 0;
@@ -28,7 +28,7 @@ body {
 }
 
 .navegacao.ocultar {
-  top: -100px; /* sobe pra fora da tela */
+  top: -100px;
 }
 
 .menu {
@@ -45,7 +45,6 @@ body {
   position: relative;
   padding: 0.5rem;
 }
-
 .menu-link::after {
   content: "";
   height: 2px;
@@ -57,12 +56,9 @@ body {
   background: linear-gradient(90deg, #ffffff, #ffffff);
   transition: width 0.3s ease;
 }
+.menu-link:hover::after { width: 100%; }
 
-.menu-link:hover::after {
-  width: 100%;
-}
-
-/* 🔹 Cabeçalho */
+/* Cabeçalho */
 .fotoperfil {
   width: 250px;
   height: 250px;
@@ -83,29 +79,12 @@ body {
   gap: 0.25rem;
 }
 
-h1 {
-  font-size: 3.5rem;
-  color: #d3d3d3dc;
-}
+h1 { font-size: 3.5rem; color: #d3d3d3dc; }
+.cabecalho-subtitulo { font-size: 1.5rem; color: #6d6b6bde; margin-top: 0.5rem; }
 
-.cabecalho-subtitulo {
-  font-size: 1.5rem;
-  color: #6d6b6bde;
-  margin-top: 0.5rem;
-}
-
-/* 🔹 Sobre */
-.sobre {
-  padding: 6rem 2rem;
-}
-
-.sobre-titulo {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  color: #c9c9c9bb;
-  text-align: center;
-}
-
+/* Sobre */
+.sobre { padding: 6rem 2rem; }
+.sobre-titulo { font-size: 3rem; margin-bottom: 1rem; color: #c9c9c9bb; text-align: center; }
 .sobre-sobre {
   padding: 2rem;
   max-width: 800px;
@@ -113,26 +92,13 @@ h1 {
   border-radius: 16px;
   border: 1px solid #692828d5;
   backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(90, 8, 8, 0.24)
 }
+.sobre-paragrafo { text-align: center; font-size: 1rem; margin-bottom: 3rem; }
 
-.sobre-paragrafo {
-  text-align: center;
-  font-size: 1rem;
-  margin-bottom: 3rem;
-}
-
-/* 🔹 Projetos */
-.projetos {
-  padding: 6rem 2rem;
-}
-
-.projetos-titulo {
-  font-size: 2.5rem;
-  margin-bottom: 50px;
-  text-align: center;
-}
-
+/* Projetos */
+.projetos { padding: 6rem 2rem; }
+.projetos-titulo { font-size: 2.5rem; margin-bottom: 50px; text-align: center; }
 .projetos-caixa {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -140,103 +106,40 @@ h1 {
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .projetos-card {
   background-color: rgba(49, 56, 63, 0.301);
   border-radius: 16px;
   backdrop-filter: blur(5px);
-  border: 1px solid #24252521;
+  border: 1px solid #25242421;
   overflow: hidden;
   transition: all 0.5s ease;
   cursor: pointer;
 }
+.projetos-card:hover { box-shadow: 0 10px 20px #b128288f; transform: translateY(-10px) scale(1.03); }
+.projetos-imagem { height: 400px; width: 100%; object-fit: cover; display: block; }
+.caixa-texto-projeto { padding: 1.5rem; }
+.info-projetos { margin-bottom: 5px; text-align: center; }
+.paragrafo-projetos { color: rgba(255, 255, 255, 0.877); line-height: 1.25rem; text-align: center; }
 
-.projetos-card:hover {
-  box-shadow: 0 10px 20px #b128288f;
-  transform: translateY(-10px) scale(1.03);
-}
-
-.projetos-imagem {
-  height: 400px; /* 🟢 Corrigido (sem espaço entre número e unidade) */
-  width: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.caixa-texto-projeto {
-  padding: 1.5rem;
-}
-
-.info-projetos {
-  margin-bottom: 5px;
-  text-align: center;
-}
-
-.paragrafo-projetos {
-  color: rgba(255, 255, 255, 0.877);
-  line-height: 1.25rem;
-  text-align: center;
-}
-
-/* 🔹 Contato */
-.contatos {
-  padding: 6rem 2rem;
-  text-align: center;
-}
-
-.contatos-titulo {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  color: #d7edf3ea;
-}
-
+/* Contato */
+.contatos { padding: 6rem 2rem; text-align: center; }
+.contatos-titulo { font-size: 3rem; margin-bottom: 1rem; color: #d7edf3ea; }
 .formulario-contato {
   max-width: 600px;
   margin: 0 auto;
-  background: rgba(53, 51, 51, 0.05);
+  background: rgba(61, 4, 4, 0.212);
   backdrop-filter: blur(5px);
   padding: 2rem;
   border: 1px solid rgb(88, 67, 67);
   border-radius: 16px;
 }
+.grupo-form { margin-bottom: 1.5rem; }
+.campo-form { width: 100%; padding: 1rem; background: rgba(255,255,255,0.05); border-radius:8px; color:#ffffffc2; border:1px solid rgb(88,67,67); outline:none;}
+.campo-form:focus { border-color:#2e0808; box-shadow: 0 0 10px #6e1e1ea8; }
+.botao-form { color: antiquewhite; background: linear-gradient(45deg, #411a1a, #ff0000); padding:1rem 2rem; border:none; border-radius:8px; cursor:pointer; font-weight:bold; width:100%; transition:all 0.5s ease; }
+.botao-form:hover { transform: translateY(-4px); box-shadow: 0 5px 15px rgba(79, 70, 229, 0.04); }
 
-.grupo-form {
-  margin-bottom: 1.5rem;
-}
-
-.campo-form {
-  width: 100%;
-  padding: 1rem;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 8px;
-  color: #ffffffc2;
-  border: 1px solid rgb(88, 67, 67);
-  outline: none;
-}
-
-.campo-form:focus {
-  border-color: #2e0808;
-  box-shadow: 0 0 10px #6e1e1ea8;
-}
-
-.botao-form {
-  color: antiquewhite;
-  background: linear-gradient(45deg, #411a1a, #ff0000);
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
-  width: 100%;
-  transition: all 0.5s ease;
-}
-
-.botao-form:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 5px 15px rgba(79, 70, 229, 0.04);
-}
-
-/* 🔹 Fundo com partículas */
+/* Partículas (decor) */
 .particulas {
   position: fixed;
   width: 100%;
@@ -244,18 +147,53 @@ h1 {
   top: 0;
   left: 0;
   z-index: -1;
-  opacity: 0.5; /* 🟢 Corrigido: vírgula trocada por ponto */
+  opacity: 0.5;
   background: radial-gradient(circle at 10% 20%, #ff0606, #6e030371 0%, transparent 20%),
               radial-gradient(circle at 90% 80%, #a82f2f, #6d13134d 0%, transparent 20%),
               rgb(19, 15, 44);
 }
 
-/* 🔹 Animação */
+/* Animação de flutuar */
 @keyframes flutuar {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
 }
+
+/* container */
+.chuva-folhas{
+  position: fixed;
+  inset: 0;              /* top:0; left:0; right:0; bottom:0; */
+  overflow: hidden;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* cada folha (forma CSS) */
+.folha{
+  position: absolute;
+  top: -140px;            /* começa acima da tela */
+  width: 40px;
+  height: 28px;
+  background: linear-gradient(180deg, #d18b2a 0%, #a65e1a 100%);
+  border-radius: 40% 60% 50% 50%;
+  opacity: 0.95;
+  /* duas animações separadas sem conflito:
+     - cair usa top (não mexe em transform)
+     - balancar usa transform
+  */
+  animation: cair linear forwards, balancar ease-in-out infinite;
+}
+
+/* queda: modifica 'top' (não toca transform) */
+@keyframes cair {
+  from { top: -140px; opacity: 1; }
+  to   { top: 110vh;  opacity: 0; }
+}
+
+/* balanço / rotação: mexe só no transform */
+@keyframes balancar {
+  0%   { transform: translateX(0) rotate(0deg); }
+  50%  { transform: translateX(25px) rotate(18deg); }
+  100% { transform: translateX(-10px) rotate(-8deg); }
+}
+

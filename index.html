@@ -10,33 +10,28 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
-      
     />
   </head>
   <body>
-    <div class="particulas">
-      
-    </div>
+    <!-- Fundo animado de folhas (container) -->
+    <div class="chuva-folhas"></div>
+
+
+    <!-- Partículas / fundo decorativo -->
+    <div class="particulas"></div>
+
     <nav class="navegacao">
       <ul class="menu">
-        <li>
-          <a href="#inicio" class="menu-link">Início</a>
-        </li>
-        <li>
-          <a href="#sobre" class="menu-link">Sobre</a>
-        </li>
-        <li>
-          <a href="#projetos" class="menu-link">Projetos</a>
-        </li>
-        <li>
-          <a href="#contatos" class="menu-link">Contato</a>
-        </li>
+        <li><a href="#inicio" class="menu-link">Início</a></li>
+        <li><a href="#sobre" class="menu-link">Sobre</a></li>
+        <li><a href="#projetos" class="menu-link">Projetos</a></li>
+        <li><a href="#contatos" class="menu-link">Contato</a></li>
       </ul>
     </nav>
 
     <main id="inicio" class="cabecalho">
       <div>
-        <img src="imagens/makima.jpeg" class="fotoperfil" />
+        <img src="imagens/makima.jpeg" class="fotoperfil" alt="Foto do Felipe" />
         <h1>Felipe Silva</h1>
         <p class="cabecalho-subtitulo">Desenvolvedor Iniciante Full Stack</p>
       </div>
@@ -46,48 +41,47 @@
       <h2 class="sobre-titulo">Sobre Mim</h2>
       <div class="sobre-sobre">
         <p class="sobre-paragrafo">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, fugit voluptatum eveniet fugiat nesciunt nihil corporis repellendus quisquam officia odio optio provident praesentium atque vitae amet quas nemo. Odio, atque.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, fugit
+          voluptatum eveniet fugiat nesciunt nihil corporis repellendus quisquam
+          officia odio optio provident praesentium atque vitae amet quas nemo.
+          Odio, atque.
         </p>
       </div>
     </section>
 
     <section id="projetos" class="projetos">
-    <h2 class="projetos-titulo">Tatuagens</h2>
+      <h2 class="projetos-titulo">Tatuagens</h2>
 
-<div class="projetos-caixa">
-  
-  <div class="projetos-card">
-    <a href="https://br.pinterest.com/pin/14496030046040939/" target="_blank">
-      <img class="projetos-imagem" src="imagens/chati1.jpeg" alt="Projeto Tatto" />
-    </a>
-    <div class="caixa-texto-projetos">
-      <h3 class="info-projetos">I</h3>
-      <p class="paragrafo-projetos"></p>
-    </div>
-  </div>
+      <div class="projetos-caixa">
+        <div class="projetos-card">
+          <a href="https://br.pinterest.com/pin/14496030046040939/" target="_blank">
+            <img class="projetos-imagem" src="imagens/chati1.jpeg" alt="Projeto Tatto" />
+          </a>
+          <div class="caixa-texto-projetos">
+            <h3 class="info-projetos">I</h3>
+            <p class="paragrafo-projetos"></p>
+          </div>
+        </div>
 
-  <div class="projetos-card">
-    <a href="https://br.pinterest.com/pin/1266706140708543/" target="_blank">
-      <img class="projetos-imagem" src="imagens/chati2.jpeg" alt="Projeto 2" />
-    </a>
-    <div class="caixa-texto-projetos">
-      <h3 class="info-projetos">II</h3>
-      <p class="paragrafo-projetos"></p>
-    </div>
-  </div>
+        <div class="projetos-card">
+          <a href="https://br.pinterest.com/pin/1266706140708543/" target="_blank">
+            <img class="projetos-imagem" src="imagens/chati2.jpeg" alt="Projeto 2" />
+          </a>
+          <div class="caixa-texto-projetos">
+            <h3 class="info-projetos">II</h3>
+            <p class="paragrafo-projetos"></p>
+          </div>
+        </div>
 
-  <div class="projetos-card">
-    <a href="https://br.pinterest.com/pin/4081455907387280/" target="_blank">
-      <img class="projetos-imagem" src="imagens/chati3.jpeg" alt="Projeto 3" />
-    </a>
-    <div class="caixa-texto-projetos">
-      <h3 class="info-projetos">III</h3>
-      <p class="paragrafo-projetos"></p>
-    </div>
-  </div>
-
-</div>
-
+        <div class="projetos-card">
+          <a href="https://br.pinterest.com/pin/4081455907387280/" target="_blank">
+            <img class="projetos-imagem" src="imagens/chati3.jpeg" alt="Projeto 3" />
+          </a>
+          <div class="caixa-texto-projetos">
+            <h3 class="info-projetos">III</h3>
+            <p class="paragrafo-projetos"></p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -98,15 +92,12 @@
           <input placeholder="Nome" class="campo-form" id="nome" />
         </div>
         <div class="grupo-form">
-          <textarea
-            class="campo-form"
-            placeholder="Digite sua Mensagem" rows="6" id="mensagem"
-          ></textarea>
+          <textarea class="campo-form" placeholder="Digite sua Mensagem" rows="6" id="mensagem"></textarea>
         </div>
         <button type="submit" class="botao-form">Enviar Whatsapp</button>
       </form>
-    </section> 
-    
+    </section>
+
     <script src="script.js"></script>
   </body>
 </html>
