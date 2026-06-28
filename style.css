@@ -64,8 +64,8 @@ body {
   height: 250px;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid #ff0000;
-  box-shadow: 0 0 20px #e08080;
+  border: 4px solid #f3f3f3;
+  box-shadow: 0 0 20px #796d6d;
   animation: flutuar 5s ease-in-out infinite;
 }
 
@@ -136,7 +136,7 @@ h1 { font-size: 3.5rem; color: #d3d3d3dc; }
 .grupo-form { margin-bottom: 1.5rem; }
 .campo-form { width: 100%; padding: 1rem; background: rgba(255,255,255,0.05); border-radius:8px; color:#ffffffc2; border:1px solid rgb(88,67,67); outline:none;}
 .campo-form:focus { border-color:#2e0808; box-shadow: 0 0 10px #6e1e1ea8; }
-.botao-form { color: antiquewhite; background: linear-gradient(45deg, #411a1a, #ff0000); padding:1rem 2rem; border:none; border-radius:8px; cursor:pointer; font-weight:bold; width:100%; transition:all 0.5s ease; }
+.botao-form { color: antiquewhite; background: linear-gradient(45deg, #411a1a, #702f09); padding:1rem 2rem; border:none; border-radius:8px; cursor:pointer; font-weight:bold; width:100%; transition:all 0.5s ease; }
 .botao-form:hover { transform: translateY(-4px); box-shadow: 0 5px 15px rgba(79, 70, 229, 0.04); }
 
 /* Partículas (decor) */
